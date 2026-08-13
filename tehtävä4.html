@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8">
+        <title>Tehtävä 4</title>
+    </head>
+
+    <body>
+
+        <script>
+            //kohta a
+            const tuotteet = [
+                { nimi: "Kahvi", hinta: 4.5 },
+                { nimi: "Tee", hinta: 3 },
+                { nimi: "Kaakao", hinta: 3.5},
+            ];
+
+            const nimet = tuotteet.map((x) => x.hinta * 1.1);
+
+            document.write(nimet);
+
+            
+            
+            
+            
+            //kohta  b ja c
+            const kalleinHinta = Math.max(...tuotteet.map(tuote => tuote.hinta));
+            document.write("<br>Tuotteet, jotka alkavat 'K': " + tuotteet.map(t => t.nimi).join(", ") + "<br>");
+
+            document.write("Kallein hinta: " + kalleinHinta);
+        </script>
+    </body>
+</html>

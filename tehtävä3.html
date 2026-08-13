@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title>tehtävä 3</title>
+    </head>
+    <body>
+
+        <script>
+
+            const auto = { merkki: "toyota", malli: "corolla", vuosi: 2021}
+
+            const merkki = auto.merkki
+            const malli = auto.malli
+            const vuosi = auto.vuosi
+
+            document.write(auto.merkki, auto.malli, auto.vuosi)
+            //b kohta
+            function laskeyhteensa(...luvut){
+                let summa = 0;
+                for (const luku of luvut) {
+                    summa += luku;
+
+                }
+                return summa;
+
+            }
+            document.write(laskeyhteensa(1, 2, 3));
+
+            document.write(laskeyhteensa( 1, 2, 3, 4));
+
+
+
+
+        </script>
+    </body>
+</html>

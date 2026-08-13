@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title>tehtävä 5</title>
+    </head>
+    <body>
+
+        <script>
+
+            function wait(ms) {
+                return new Promise((resolve) => setTimeout(resolve, ms));
+            }
+
+            async function laskeviiveellä(a, b) {
+                await wait(1000); 
+                return a + b;
+            }
+
+            async function main() {
+                const sum = await laskeviiveellä(3, 4);
+                document.write("tulos on:" + sum); 
+            }
+
+            main(); 
+
+        </script>
+    </body>
+</html>
