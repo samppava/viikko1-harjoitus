@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Testisivu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #tulos {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eee;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>API Testisivu</h1>
+
+        <p>Tällä sivulla voidaan testata API-kutsuja.</p>
+
+        <button onclick="testaaAPI()">
+            Testaa API
+        </button>
+
+        <div id="tulos">
+            API-vastaus tulee tähän.
+        </div>
+    </div>
+
+    <script>
+        function testaaAPI() {
+            document.getElementById("tulos").textContent =
+                "API toimii! 🎉";
+        }
+    </script>
+
+</body>
+</html>
